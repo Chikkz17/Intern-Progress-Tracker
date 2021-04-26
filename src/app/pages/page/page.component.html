@@ -1,0 +1,41 @@
+<section class="cmspage mtb-40">
+    <div class="container">
+      
+        <a class="nav-link" routerLink="create-intern" style="float: right" routerLinkActive="Active"><h4>Add intern</h4></a>
+      
+      <h1>Interns List</h1>
+      <div class="page-desc">
+        <table class="table table-stripped">
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Mentor</th>
+            <th>HtmlCss</th>
+            <th>Java</th>
+            <th>Spring/Hibernate</th>
+            <th>Angular</th>
+            <th>Actions</th>
+            
+           </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let intern of interns">
+              <td>{{intern.name}}</td>
+              <td>{{intern.mentor}}</td>
+              <td>{{intern.htmlCss}}</td>
+              <td>{{intern.java}}</td>
+              <td>{{intern.springHibernate}}</td>
+              <td>{{intern.angular}}</td>
+              <td>
+                <button (click)="updateIntern(intern.id)" class="btn btn-info">Update</button>
+                <button (click)="deleteIntern(intern.id)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+              </td>
+              
+            </tr> 
+
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+</section>

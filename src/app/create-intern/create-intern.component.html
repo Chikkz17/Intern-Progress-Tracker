@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+<h2>Add Intern</h2>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="intern.name" name="name">
+    </div>
+    <div class="form-group">
+        <label >Mentor</label>
+        <input type="text" class="form-control" id="mentor" [(ngModel)]="intern.mentor" name="mentor">
+    </div>
+    <div class="form-group">
+        <label >HtmlCss</label>
+        <input type="text" class="form-control" id="htmlCss" [(ngModel)]="intern.htmlCss" name="htmlCss">
+    </div>
+    <div class="form-group">
+        <label >Java</label>
+        <input type="text" class="form-control" id="java" [(ngModel)]="intern.java" name="java">
+    </div>
+    <div class="form-group">
+        <label >Spring/Hibernate</label>
+        <input type="text" class="form-control" id="springHibernate" [(ngModel)]="intern.springHibernate" name="springHibernate">
+    </div>
+    <div class="form-group">
+        <label >Angular</label>
+        <input type="text" class="form-control" id="angular" [(ngModel)]="intern.angular" name="angular">
+    </div>
+    <br>
+    <div class="text-center">
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </div>
+
+</form>
+</div>
